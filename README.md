@@ -20,7 +20,7 @@ The project was created by following a tutorial from **Sheriyans Coding School**
 To run this project locally:  
 1. Clone this repository:  
    ```bash  
-   git clone [repository link]
+   git clone [[repository link]](https://github.com/Samruddhi631/sundown-website-clone.git)
 
 2. Navigate to the project folder.
 3. Open index.html in your browser to view the website.
