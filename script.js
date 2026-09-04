@@ -3,6 +3,20 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
+const main = document.querySelector('#main');
+scroll.on('scroll', function (args) {
+    const maxScroll = args.limit.y;
+    main.style.zIndex = args.scroll.y >= maxScroll - 20 ? '8' : '10';
+});
+
+window.addEventListener('load', function () {
+    scroll.update();
+});
+
+window.addEventListener('resize', function () {
+    scroll.update();
+});
+
 
 function page4Animation() {
     var elemC = document.querySelector("#elem-container")
